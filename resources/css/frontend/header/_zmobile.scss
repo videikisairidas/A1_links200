@@ -1,0 +1,295 @@
+header {
+    position: relative;
+    background: rgb(255, 255, 255);
+    z-index: 1000;
+    border-bottom: 1px solid rgb(192, 192, 192);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+#mobileMenuIcon {
+    font-size: 30px;
+    color: rgb(39, 39, 39);
+    padding: 10px;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    &:hover {
+        color: rgb(47, 130, 255);
+    }
+}
+#mobileMenuClose {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    &:hover {
+        color: red;
+    }
+}
+
+#headerDesktop {
+    // display: none;
+    > div {
+        display: flex;
+        padding: 12px 10px;
+    }
+    input {
+        display: none;
+    }
+}
+.TopHeaderlogo {
+    display: flex;
+    align-items: center;
+    img {
+        align-items: center;
+        height: 40px;
+    }
+}
+.navLarge {
+    display: none;
+    align-items: center;
+    margin-left: 10px;
+    a {
+        // font-family: "modern600", sans-serif;
+        font-size: 20px;
+        color:rgb(58, 58, 58);
+        margin: 0 10px;
+        &:hover {
+            color:rgb(61, 107, 255);
+        }
+    }
+}
+.navUser {
+    display: none;
+    align-items: center;
+    margin-left: auto;
+    div {
+        a {
+            font-size: 20px;
+            color: rgb(39, 39, 39);
+            margin: 0 4px;
+            &:hover {
+                color:rgb(57, 86, 255);
+            }
+        }
+    }
+    img {
+        max-width: 40px;
+    }
+    a {
+        
+    }
+}
+.userStats {
+    display: none;
+    align-items: center;
+    margin: 0 10px;
+    font-size: 20px;
+    cursor: pointer;
+    background: rgb(243, 243, 243);
+    padding: 10px 10px;
+    border-radius: 8px;
+    div {
+        color: rgb(39, 124, 252);
+        margin: 0 5px;
+        i { 
+            margin: 0 5px;
+            color: rgb(39, 124, 252);
+        }
+    }
+    i { 
+        margin-left: 10px;
+        color: #68b21d;
+    }
+}
+#headerUploadIcon {
+
+    font-size: 20px;
+    color: rgb(49, 49, 49);
+    padding: 10px;
+    cursor: pointer;
+    right: 10px;
+    border: 1px solid rgb(31, 31, 31);
+    border-radius: 100px;
+    padding: 8px 16px;
+    margin: 0 30px;
+    &:hover {
+        background: rgba(31, 31, 31, 0.26);
+    }
+    button {
+        display: none;
+        background: none;
+        border: none;
+        color: rgb(36, 36, 36);
+        font-size: 16px;
+        cursor: pointer;
+    }
+}
+.userName {
+    display: none;
+    color: rgb(36, 36, 36);
+    margin: 0 10px;
+    cursor: pointer;
+    &:hover {
+        color: rgb(83, 100, 255);
+    }
+}
+#userProfileImage {
+    cursor: pointer;
+    position: relative;
+    // overflow: hidden;
+    > img {
+        border-radius: 100px;
+        width: 40px;
+        height: 40px;
+    }
+    &:hover #profileMenu {
+        display: block;
+    }
+}
+#profileMenu {
+    display: none;
+    position: absolute;
+    right: 0;
+    background: rgb(255, 255, 255);
+    width: 140px;
+    border: 1px solid rgb(190, 190, 190);
+    overflow: hidden;
+    a{
+        display: flex;
+    }
+    a, button {
+        width: 100%;
+        color: rgb(27, 27, 27);
+        &:hover {
+            background: #3373ff;
+            color: white;
+        }
+    }
+    > a, form {
+        font-size: 14px;
+        display: block;
+        padding: 10px 20px;
+    }
+    button {
+        background: none;
+        border: none;
+        width: 100%;
+        text-align: left;
+        font-weight: 600;
+        padding: 0px;
+        cursor: pointer;
+        padding: 10px 20px;
+    }
+    form {
+        width: 100%;
+        padding: 0;
+    }
+}
+#userProfileImage:hover #profileMenu {
+    display: block;
+}
+
+#userSearchComponent {
+    display: none;
+    height: auto;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background :rgb(238, 238, 238);
+    &.active {
+        display: block;
+    }
+}
+#userSearchInput {
+    width: 100%;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    border: none;
+    background: none;
+    box-shadow: none;
+    outline: none;
+    padding: 5px 20px;
+    font-size: 20px;
+    border-bottom: 1px solid rgb(192, 192, 192);
+    color: rgb(17, 86, 214);
+}
+#userSearchClose {
+    position: absolute;
+    right: 10px;
+    top: 8px;
+}
+#userSearchIcon {
+    display: none;
+    font-size: 25px;
+    color: rgb(34, 34, 34);
+    padding: 10px;
+    cursor: pointer;
+    &:hover {
+        color: rgb(49, 52, 255);
+    }
+}
+#userSearchResults {
+
+    >a {
+        display: flex;
+        margin: 10px;
+        padding: 10px;
+        border-bottom: 1px solid rgb(192, 192, 192);
+        color: rgb(36, 36, 36);
+        > img {
+            // border-radius: 100px;
+            width: 40px;
+            height: 40px;
+            margin-right: 20px;
+        }
+        &:hover {
+            background: #3373ff;
+            color: white;
+        }
+    }
+}
+
+
+
+@media screen and (min-width: 600px) {
+    #headerMobile, #mobileMenuIcon {
+        display: none;
+    }
+    .navLarge {
+        display: flex;
+    }
+    .navUser {
+        display: flex;
+    }
+}
+@media screen and (min-width: 760px) {
+    #headerUploadIcon {
+        display: flex;
+        button {
+            display: block;
+        }
+    }
+}
+@media screen and (min-width: 860px) {
+    #headerUploadIcon {
+        margin: 0 10px;
+    }
+    .userStats {
+        display: flex;
+        margin: 5px;
+    }
+}
+@media screen and (min-width: 1000px) {
+    #userSearchIcon {
+        display: block;
+        margin-right: 10px;
+    }
+}

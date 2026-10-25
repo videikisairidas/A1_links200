@@ -1,0 +1,10 @@
+.ticketColumnContainer {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    > div {
+        border: 1px solid rgb(29, 29, 29);
+    }
+}
+.NavLinks {
+    font-size: 20px;
+}

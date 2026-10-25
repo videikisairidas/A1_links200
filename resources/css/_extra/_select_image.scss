@@ -1,0 +1,31 @@
+#ImageUploadBox {
+    background: red;
+    width: 90%;
+    height: 100%;
+    margin: 2vh auto;
+    min-height: 400px;
+    max-height: 400px;
+    padding: 20px;
+    position: relative;
+    border: 2px solid rgb(190, 190, 190);
+    background: white;
+    border-radius: 20px;
+    border-style: dashed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    >div {
+        margin-bottom: 20px;
+    }
+    > img {
+        position: absolute;
+        height: auto;
+        max-height: 100%;
+        max-width: 100%;
+    }
+    &:hover {
+        border-color: rgb(0, 0, 0);
+        background: rgb(228, 228, 228);
+    }
+
+}

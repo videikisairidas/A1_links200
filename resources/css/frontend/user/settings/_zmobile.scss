@@ -1,0 +1,147 @@
+#userProfileSettings {
+    width: 100%;
+    margin: 0 auto;
+    background: rgb(238, 238, 238);
+    padding: 40px 0;
+    // height: 1200px;
+}
+#userProfileSettings .userProfileSettings {
+    width: 70%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.userProfileSettings form {
+    margin: 0 0 40px;
+    button {
+        margin: 10px 0;
+        //nice button style
+        background: none;
+        border: none;
+        color: white;
+        font-size: 20px;
+        cursor: pointer;
+        padding: 12px 30px;
+        border-radius: 20px;
+        border: 1px solid white;
+        background: rgba(0, 0, 0, 0.7);
+        transition: all 0.2s ease;
+        font-weight: 800;
+        &:hover {
+            background: rgba(0, 0, 0, 0.8);
+            color: #4aa7ff;
+            border-color: #4274ff;
+        }
+        
+    }
+}
+
+#userProfileSettings {
+    padding: 30px;
+    background: #f7f9fc;
+
+    .userProfileSettings {
+        max-width: 800px;
+        margin: 0 auto;
+        background: #ffffff;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+
+        form {
+            width: 80%;
+            margin-bottom: 40px;
+            padding-bottom: 25px;
+            border-bottom: 1px solid #e6e6e6;
+
+            &:last-of-type {
+                border-bottom: none;
+                margin-bottom: 0;
+                padding-bottom: 0;
+            }
+        }
+
+        .form-group {
+            // width: 80%;
+            margin-bottom: 18px;
+
+            label {
+                display: block;
+                font-weight: 600;
+                margin-bottom: 6px;
+                color: #333;
+            }
+
+            input,
+            select {
+                width: 100%;
+                padding: 10px 14px;
+                border: 1px solid #d1d1d1;
+                border-radius: 6px;
+                font-size: 15px;
+                transition: all 0.2s ease;
+
+                &:focus {
+                    border-color: #007bff;
+                    box-shadow: 0 0 0 3px rgba(0,123,255,0.15);
+                }
+            }
+        }
+
+        .btn {
+            padding: 10px 20px;
+            font-size: 15px;
+            border-radius: 6px;
+            font-weight: 600;
+
+            &.btn-primary {
+                background: #007bff;
+                border: none;
+
+                &:hover {
+                    background: #015cbd;
+                }
+            }
+
+            &.btn-danger {
+                background: #dc3545;
+                border: none;
+
+                &:hover {
+                    background:#df2638, 8%;
+                }
+            }
+        }
+
+        .mt-4 {
+            margin-top: 1.5rem;
+        }
+    }
+}
+@media screen and (min-width: 800px) {
+    .userProfileForm {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+    #userProfileSettings #country_id {
+        width: 90%;
+    }
+    #userProfileSettings .userProfileSettings .form-group {
+        width: 100%;
+        input {
+            width: 80%;
+        }
+    }
+    #userProfileSettings button {
+        max-width: 160px;
+    }
+    
+}
